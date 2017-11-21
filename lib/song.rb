@@ -37,7 +37,7 @@ class Song
     end
 
     def self.alphabetical
-      songs_alphabetically = @all.all.sort
+      songs_alphabetically = self.all.sort
       songs_alphabetically
     end
   end
