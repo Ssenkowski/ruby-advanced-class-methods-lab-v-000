@@ -37,5 +37,18 @@ class Song
     end
 
     def self.alphabetical
-self.all.sort_by{|s| s.name}    end
+      self.all.sort_by{|s| s.name}
+    end
+
+    def new_from_filename(filename)
+
+    end
+
+    def create_from_filename(filename)
+
+    end
+
+    def self.destroy_all
+      self.all.clear
+    end
   end
