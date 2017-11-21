@@ -29,9 +29,7 @@ class Song
     end
 
     def self.find_by_name(name)
-      self.all.each do |s|
-        s.include?(name)
-        s
+      self.all.include?(name)
       end
     end
   end
