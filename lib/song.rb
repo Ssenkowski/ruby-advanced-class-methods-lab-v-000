@@ -20,4 +20,9 @@ class Song
       @song = song
       @song
     end
+
+    def self.create_by_name(song)
+      @song = song
+      @@all << @song
+    end
   end
