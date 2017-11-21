@@ -33,5 +33,6 @@ class Song
         s.include?(name)
         name
       end
+      end
     end
   end
