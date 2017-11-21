@@ -24,5 +24,6 @@ class Song
     def self.create_by_name(song)
       @song = song
       @@all << @song
+      @@all
     end
   end
