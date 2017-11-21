@@ -30,6 +30,5 @@ class Song
 
     def self.find_by_name(name)
       self.create_by_name(name).include?("#{name}")
-      binding.pry
     end
   end
