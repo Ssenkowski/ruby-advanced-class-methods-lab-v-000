@@ -10,8 +10,8 @@ class Song
       self.class.all << self
     end
 
-    def self.create
-      song = self
+    def self.create(song)
+      song = song
       @@all << song
       @@all
     end
@@ -25,5 +25,10 @@ class Song
       @song = song
       @@all << @song
       @@all
+    end
+
+    def self.find_by_name(song)
+      
+      
     end
   end
