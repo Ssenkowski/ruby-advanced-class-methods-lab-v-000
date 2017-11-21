@@ -29,7 +29,6 @@ class Song
     end
 
     def self.find_by_name(name)
-
-
+      self.create_by_name(name).include?("#{name}")
     end
   end
