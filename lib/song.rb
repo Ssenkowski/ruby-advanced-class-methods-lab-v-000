@@ -29,7 +29,8 @@ class Song
     end
 
     def self.find_by_name(name)
-      if self.all.include?(name)
+      if self.all.each do |s|
+        s.include?(name)
         name
       end
     end
